@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Solicitação de Stickers | Vagas.com</title>
+</head>
+
+<body>
+  <div class="form-page">
+    <header class="form-header">
+      <h1 class="header-title">Formulário<br> para compra de <strong>Pacote de Stickers</strong></h1>
+    </header>
+    <form id="request-stickers">
+      <fieldset>
+        <legend>Quais stickers?</legend>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="" id="input-react">
+          <label for="input-react">React</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="" id="input-vue">
+          <label for="input-vue">Vue</label>
+        </div>
+        <div class="checkbox-wrapper">
+          <input type="checkbox" name="" id="input-angular">
+          <label for="input-angular">Angular</label>
+        </div>
+      </fieldset>
+      <div class="amount-wrapper">
+        <label for="input-amount">Quantos stickers de cada?</label>
+        <div class="counter">
+          <button type="button" class="decrement">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.66667C0 2.09067 2.09067 0 4.66667 0H37.3333C39.9093 0 42 2.09067 42 4.66667V37.3333C42 39.9093 39.9093 42 37.3333 42H4.66667C2.09067 42 0 39.9093 0 37.3333V4.66667ZM9.33333 23.3333H32.6667V18.6667H9.33333V23.3333Z" fill="#2F3676" />
+            </svg>
+          </button>
+          <input type="text" id="input-amount" name="" value="100">
+          <button type="button" class="increment">
+            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Bot&#195;&#163;o +">
+                <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M37.3333 42H4.66667C2.09067 42 0 39.9093 0 37.3333V4.66667C0 2.09067 2.09067 0 4.66667 0H37.3333C39.9093 0 42 2.09067 42 4.66667V37.3333C42 39.9093 39.9093 42 37.3333 42ZM18.6667 18.6667H9.33333V23.3333H18.6667V32.6667H23.3333V23.3333H32.6667V18.6667H23.3333V9.33333H18.6667V18.6667Z" fill="#2F3676" />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="textarea-wrapper">
+        <label for="input-comments">Observações:</label>
+        <textarea name="" id="input-comments" placeholder="Algum pedido especial? Conta pra gente!"></textarea>
+      </div>
+    </form>
+    <footer>
+      <button form="request-stickers" class="form-submit">Enviar</button>
+    </footer>
+  </div>
+</body>
+
+</html>
